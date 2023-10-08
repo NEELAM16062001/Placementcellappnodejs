@@ -33,7 +33,7 @@ app.use(passport.setAuthenticatedUser);
 // express router
 app.use('/', require('./routes'));
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // listen on port
 app.listen(port, function (error) {
